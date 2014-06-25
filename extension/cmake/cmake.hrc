@@ -153,7 +153,9 @@
   </scheme>
 
   <scheme name="Expressions">
-   <block start="/(macro)/i" end="/(endmacro)/i" scheme="cmake"
+   <block start="/([\n\s\r\t])(macro)/i" end="/(endmacro)/i" scheme="cmake"
+          region00="def:Symbol" region01="def:PairStart" region10="def:Symbol" region11="def:PairEnd"/>
+   <block start="/(^)(macro)/i" end="/(endmacro)/i" scheme="cmake"
           region00="def:Symbol" region01="def:PairStart" region10="def:Symbol" region11="def:PairEnd"/>
    <block start="/(function)/i" end="/(endfunction)/i" scheme="cmake"
           region00="def:Symbol" region01="def:PairStart" region10="def:Symbol" region11="def:PairEnd"/>
