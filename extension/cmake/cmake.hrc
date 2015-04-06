@@ -190,6 +190,8 @@
       <word name="execute_process"/>
       <word name="include"/>
       <word name="else"/>
+      <word name="elseif"/>
+      <word name="cmake_policy"/>
     </keywords>
     <keywords region="cmake_function_parameters_names" ignorecase="no">
       <word name="QUIET"/>
