@@ -54,6 +54,7 @@
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(WRITE)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(APPEND)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(READ)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
+   <block start="/([\n\s\r\t]|^)(file)(\()( *)(COPY)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(MD5)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(SHA1)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(file)(\()( *)(SHA224)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
@@ -191,7 +192,6 @@
       <word name="include"/>
       <word name="else"/>
       <word name="elseif"/>
-      <word name="cmake_policy"/>
     </keywords>
     <keywords region="cmake_function_parameters_names" ignorecase="no">
       <word name="QUIET"/>
