@@ -94,7 +94,7 @@
    <block start="/([\n\s\r\t]|^)(message)(\()( *)(AUTHOR_WARNING)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(message)(\()( *)(SEND_ERROR)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(message)(\()( *)(FATAL_ERROR)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
-   <regexp match="/([\n\s\r\t]|^)(message)(\()(.*)(\))/" region2="cmake_function_names" region4="def:Error" region3="def:PairStart" region5="def:PairEnd" />
+   <regexp match="/([\n\s\r\t]|^)(message)(\()(.*)(\))/" region2="cmake_function_names" region4="def:String" region3="def:PairStart" region5="def:PairEnd" />
 
    <block start="/([\n\s\r\t]|^)(set)(\()( *)(CMAKE_CONFIGURATION_TYPES)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(set)(\()( *)(CMAKE_ADDRESS_MODEL)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
