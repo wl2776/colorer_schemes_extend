@@ -107,6 +107,10 @@
    <block start="/([\n\s\r\t]|^)(set)(\()/" end="/(\))/i" scheme="FunctionParameters" region00="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" />
    <regexp match="/([\n\s\r\t]|^)(set)(\()(.*)(\))/" region2="cmake_function_names" region4="def:Error" region3="def:PairStart" region5="def:PairEnd" />
 
+   <block start="/([\n\s\r\t]|^)(unset)(\()( *)(CACHE)/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region04="cmake_function_special_parameter_names" />
+   <block start="/([\n\s\r\t]|^)(unset)(\()( *)(PARENT_SCOPE)/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region04="cmake_function_special_parameter_names" />
+   <block start="/([\n\s\r\t]|^)(unset)(\()/" end="/(\))/i" scheme="FunctionParameters" region00="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" />
+
    <block start="/([\n\s\r\t]|^)(set_property)(\()( *)(GLOBAL)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(set_property)(\()( *)(DIRECTORY)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
    <block start="/([\n\s\r\t]|^)(set_property)(\()( *)(TARGET)( )/" end="/(\))/i" scheme="FunctionParameters" region01="def:Symbol" region10="def:Symbol" region02="cmake_function" region03="def:PairStart" region11="def:PairEnd" region05="cmake_function_special_parameter_names" />
